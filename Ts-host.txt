@@ -1,17 +1,16 @@
-def encode_credentials(username, password):
-    encoded_username = "".join([chr(ord(char) + 1) for char in username])
-    encoded_password = "".join([chr(ord(char) + 1) for char in password])
-    return encoded_username, encoded_password
+def hosting_code():
+    # Initialize variables
+    website = "https://www.hostinger.in/satish5738/satish-post.html"
+    server = "nginx"
 
-def login():
-    correct_username = "SATISH-BHAI"
-    correct_password = "T.S.BRAND"
-    username_input = input("Enter username:")
-    password_input = input("Enter password:")
-    encoded_username, encoded_password = encode_credentials(correct_username, correct_password)
-    if username_input == encoded_username and password_input == encoded_password:
-        print("Login successful!")
+    # Set up hosting environment
+    hosting_provider = "Amazon Web Services"
+    server_type = "EC2 instance"
+
+    # Deploy website
+    if server == "nginx":
+        print("Deploying post-server using Nginx server...")
     else:
-        print("Incorrect username or password. Please try again.")
+        print("Deploying post-server using Apache server...")
 
-login()
+    print(f"Your server {server} is now hosted on {hosting-satish}'s {server_type}.")
